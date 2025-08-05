@@ -8,39 +8,39 @@ https://img.shields.io/badge/HuggingFace-Transformers-yellow
 A comprehensive REST API for text tone classification using RoBERTa model with MongoDB integration, user authentication, and admin features.
 
 Table of Contents:
-      Features/n
-      Technologies Used/n
-      API Endpoints/n
-      Setup Instructions/n
-      Authentication/n
-      Usage Examples
-      Database Schema
-      Error Handling
-      Security
-      Deployment
-      Troubleshooting
-      Future Enhancements
+      Features,
+      Technologies Used,
+      API Endpoints,
+      Setup Instructions,
+      Authentication,
+      Usage Examples,
+      Database Schema,
+      Error Handling,
+      Security,
+      Deployment,
+      Troubleshooting,
+      Future Enhancements,
 
 Features:
-      Text Tone Analysis: Classifies text into multiple emotional tones using RoBERTa model
-      User Authentication: JWT-based secure authentication system
-      Role-Based Access Control: Admin and user roles with different permissions
-      Password Security: Strong password validation and bcrypt hashing
-      MongoDB Integration: Persistent storage for user data and analysis results
-      Comprehensive API: Well-documented endpoints for all functionality
-      Error Handling: Detailed error responses for all scenarios
+      Text Tone Analysis: Classifies text into multiple emotional tones using RoBERTa model,
+      User Authentication: JWT-based secure authentication system,
+      Role-Based Access Control: Admin and user roles with different permissions,
+      Password Security: Strong password validation and bcrypt hashing,
+      MongoDB Integration: Persistent storage for user data and analysis results,
+      Comprehensive API: Well-documented endpoints for all functionality,
+      Error Handling: Detailed error responses for all scenarios,
 
 Technologies Used:
-      Backend: Python, Flask
-      Database: MongoDB Atlas
-      NLP Model: RoBERTa for sequence classification
-      Authentication: JWT (JSON Web Tokens)
-      Password Hashing: bcrypt
+      Backend: Python, Flask,
+      Database: MongoDB Atlas,
+      NLP Model: RoBERTa for sequence classification,
+      Authentication: JWT (JSON Web Tokens),
+      Password Hashing: bcrypt,
       Dependencies:
-      PyTorch
-      Transformers (HuggingFace)
-      Flask-CORS
-      PyMongo
+      PyTorch,
+      Transformers (HuggingFace),
+      Flask-CORS,
+      PyMongo,
 
 API Endpoints:
       Authentication
@@ -59,25 +59,25 @@ API Endpoints:
       The server will start on http://localhost:5000
 
 Setup Instructions:
-      Prerequisites
-      Python 3.8+
-      MongoDB Atlas account or local MongoDB instance
-      PyTorch compatible with your hardware (CUDA if available)
+      Prerequisites,
+      Python 3.8+,
+      MongoDB Atlas account or local MongoDB instance,
+      PyTorch compatible with your hardware (CUDA if available),
 
 Authentication:
-      Signup Requirements
+      Signup Requirements,
       Password must:
-      Be exactly 8 characters long
-      Contain at least one uppercase letter
-      Contain at least one lowercase letter
-      Contain at least one number
+      Be exactly 8 characters long,
+      Contain at least one uppercase letter,
+      Contain at least one lowercase letter,
+      Contain at least one number,
       Contain at least one special character
 
 JWT Tokens
-      Tokens are valid for 24 hours
-      Include user role for authorization
+      Tokens are valid for 24 hours,
+      Include user role for authorization,
       Must be sent in the Authorization header as:
-      text
+      text,
       Authorization: Bearer <token>
 
 Usage Examples:
@@ -131,9 +131,9 @@ Usage Examples:
         
 Error Handling:
       The API returns consistent error responses with:
-      HTTP status code
-      Error message
-      Error details (when applicable)
+      HTTP status code,
+      Error message,
+      Error details (when applicable),
       Status code in response body
 
 Example error response:
@@ -151,38 +151,38 @@ Example error response:
 
 Deployment:
       For production deployment:
-      Set up a proper WSGI server (Gunicorn, uWSGI)
-      Configure Nginx/Apache as reverse proxy
-      Set proper CORS policies
-      Use HTTPS with valid certificate
-      Rotate the secret key
+      Set up a proper WSGI server (Gunicorn, uWSGI),
+      Configure Nginx/Apache as reverse proxy,
+      Set proper CORS policies,
+      Use HTTPS with valid certificate,
+      Rotate the secret key,
       Implement rate limiting
 
 Example Gunicorn command:
-    gunicorn -w 4 -b 0.0.0.0:5000 app:app
+    gunicorn -w 4 -b 0.0.0.0:5000 app:app,
     Troubleshooting
 
 Common Issues:
     MongoDB Connection Failed:
-    Verify connection string
-    Check network access to MongoDB Atlas
-    Ensure IP is whitelisted in Atlas
+    Verify connection string,
+    Check network access to MongoDB Atlas,
+    Ensure IP is whitelisted in Atlas,
     Model Loading Errors:
-    Verify model path is correct
-    Check file permissions
-    Ensure all model files are present
+    Verify model path is correct,
+    Check file permissions,
+    Ensure all model files are present,
 
 Authentication Issues:
-    Verify token is included in Authorization header
-    Check token expiration
+    Verify token is included in Authorization header,
+    Check token expiration,
     Ensure secret key matches
-
+    
 Future Enhancements
-    Add more tone categories
-    Implement batch text processing
-    Add user profile management
-    Include tone analysis history per user
-    Implement API rate limiting
-    Add Swagger/OpenAPI documentation
-    Dockerize the application
+    Add more tone categories,
+    Implement batch text processing,
+    Add user profile management,
+    Include tone analysis history per user,
+    Implement API rate limiting,
+    Add Swagger/OpenAPI documentation,
+    Dockerize the application,
     Add unit and integration tests
