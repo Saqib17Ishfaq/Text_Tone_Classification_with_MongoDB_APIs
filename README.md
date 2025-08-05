@@ -1,18 +1,18 @@
 Text Tone Classification API with MongoDB
-https://img.shields.io/badge/Python-3.8%252B-blue
-https://img.shields.io/badge/Flask-2.0%252B-green
-https://img.shields.io/badge/MongoDB-5.0%252B-brightgreen
-https://img.shields.io/badge/PyTorch-1.10%252B-orange
+https://img.shields.io/badge/Python-3.8%252B-blue,
+https://img.shields.io/badge/Flask-2.0%252B-green,
+https://img.shields.io/badge/MongoDB-5.0%252B-brightgreen,
+https://img.shields.io/badge/PyTorch-1.10%252B-orange,
 https://img.shields.io/badge/HuggingFace-Transformers-yellow
 
 A comprehensive REST API for text tone classification using RoBERTa model with MongoDB integration, user authentication, and admin features.
 
 Table of Contents:
-      Features
-      Technologies Used
-      API Endpoints
-      Setup Instructions
-      Authentication
+      Features/n
+      Technologies Used/n
+      API Endpoints/n
+      Setup Instructions/n
+      Authentication/n
       Usage Examples
       Database Schema
       Error Handling
